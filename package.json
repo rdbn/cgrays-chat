@@ -1,0 +1,17 @@
+{
+  "name": "cgrays_chat",
+  "version": "1.0.0",
+  "description": "servers webSocket for cgrays",
+  "main": "appChat.js",
+  "dependencies": {
+    "socket.io": "^2.0.3",
+    "redis": "2.8.0",
+    "amqplib": "0.5.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rdbnko",
+  "license": "ISC"
+}
