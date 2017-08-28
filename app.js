@@ -3,7 +3,8 @@ var app = require('http').createServer(function (request, response) {
     response.writeHead(200);
     response.end();
 });
-var open = require('amqplib').connect('amqp://cgrays:cgrays@localhost');
+var config = require('./config/config.json');
+var open = require('amqplib').connect('amqp://'+config.rabbit.username+':'+config.rabbit.pass+'@'+config.rabbit.host);
 var io = require('socket.io')(app);
 
 app.listen('8080', 'localhost');
